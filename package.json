@@ -6,19 +6,24 @@
     "start": "cross-env NODE_ENV=development parcel src/index.html -p 3000",
     "build": "cross-env NODE_ENV=production parcel build index.html --public-url",
     "e2e": "cypress open",
-    "lint:js": "eslint src/**/**/*.js src/**/**/*.jsx tests/**/**/*.js",
+    "lint:js": "eslint src/**/**/*.js src/**/**/*.jsx tests/**/**/*.js --fix",
     "lint:style": "stylelint src/**/**/*.css src/**/**/*.scss"
   },
   "dependencies": {
+    "@material-ui/core": "^3.6.1",
     "babel-preset-react-app": "^3.1.1",
     "cross-env": "^5.2.0",
     "cypress": "^3.0.2",
+    "material-ui": "^0.20.2",
     "parcel-bundler": "^1.9.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.6.3",
+    "react-cookies": "^0.1.0",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
